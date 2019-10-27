@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import {Link} from 'react-router-dom';
 export class Pessoas extends Component {
     constructor(props) {
         super(props);
@@ -40,6 +40,7 @@ export class Pessoas extends Component {
             </table>
         return (
             <div>
+            <Link className="btn btn-success" to={'/cadastro'}>Adicionar</Link>
             <h1>Bem vindo</h1>
             {dados}
             </div>

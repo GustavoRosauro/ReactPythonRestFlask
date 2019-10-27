@@ -3,12 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import {Route, BrowserRouter as Router} from 'react-router-dom';
+import {Route,Link, BrowserRouter as Router} from 'react-router-dom';
 import {Pessoas} from './components/Pessoas'
+import {Cadastro} from './components/Cadastro'
 const routing = (
     <Router>
        <div>
-         <Route path='/' component={Pessoas} />
+         <Route path='/' component={App} />
+         <Route path='/Lista' component={Pessoas}/>
+         <Route path='/cadastro' component={Cadastro}/>
        </div>
        </Router>
      );
