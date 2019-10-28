@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-
+import {Link} from 'react-router-dom'
 export class Cadastro extends Component{
     constructor(props){
         super(props);
@@ -37,6 +37,8 @@ export class Cadastro extends Component{
     render(){
         return(
             <div className="col-md-6">
+            <Link to={'/Lista'} className='btn btn-info'>Lista</Link>
+            <br/>
                 <label>Nome</label>
                 <input className="form-control" type="text" onChange={this.onChangeNome}/>
                 <label>Idade</label>

@@ -6,6 +6,16 @@ export class Pessoas extends Component {
         this.state = { pessoas: [],carregar:false }
         this.Pessoas()
     }
+    delete(id){
+        fetch('http://localhost:5000/delete/'+id,{
+            method:'DELETE',
+            headers:{
+                'Content-Type': 'application/json'
+            }
+        })
+        .then(this.Pessoas())
+        .catch(error => console.log(error))
+    }
     Pessoas() {
         fetch('http://localhost:5000/', {
             method: 'GET',
@@ -34,6 +44,7 @@ export class Pessoas extends Component {
                             <td>{pessoa.nome}</td>
                             <td>{pessoa.idade}</td>
                             <td>{pessoa.cpf}</td>
+                            <td><button className='btn btn-danger' onClick={this.delete.bind(this, pessoa.id)}>Excluir</button></td>
                         </tr>
                     )}
                 </tbody>

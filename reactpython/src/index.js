@@ -3,17 +3,17 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import {Route,Link, BrowserRouter as Router} from 'react-router-dom';
+import {Route,Switch, BrowserRouter as Router} from 'react-router-dom';
 import {Pessoas} from './components/Pessoas'
 import {Cadastro} from './components/Cadastro'
 const routing = (
-    <Router>
-       <div>
-         <Route path='/' component={App} />
-         <Route path='/Lista' component={Pessoas}/>
-         <Route path='/cadastro' component={Cadastro}/>
-       </div>
-       </Router>
+  <Router>
+  <Switch>
+    <Route path='/' exact={true} component={App}/>
+    <Route path='/Lista' exact={true} component={Pessoas}/>
+    <Route path='/cadastro' exact={true} component={Cadastro}/>
+  </Switch>
+  </Router>
      );
 ReactDOM.render(routing, document.getElementById('root'));
 

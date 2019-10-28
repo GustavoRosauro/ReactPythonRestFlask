@@ -1,19 +1,14 @@
 import React from 'react';
 import logo from './logo.svg';
-import {Navbar,Nav,Form,FormControl,Button} from 'react-bootstrap';
+import {Link} from 'react-router-dom'
 import './App.css';
 function App() {
   return (
-    <Navbar bg="light" expand="lg">
-  <Navbar.Brand href="/">React-Bootstrap</Navbar.Brand>
-  <Navbar.Toggle aria-controls="basic-navbar-nav" />
-  <Navbar.Collapse id="basic-navbar-nav">
-    <Nav className="mr-auto">
-      <Nav.Link href="/Lista">Lista</Nav.Link>
-      <Nav.Link href="/Cadastro">Cadastro</Nav.Link>
-    </Nav>
-  </Navbar.Collapse>
-</Navbar>
+    <div>
+    <h1>Bem vindo Ao projeto react com python</h1>
+    <Link className='btn btn-info' to={'/Lista'}>Lista</Link>
+    <Link className='btn btn-success' to={'/cadastro'} style={{marginLeft:5+'%'}}>Cadatro</Link>
+    </div>
   );
 }
 export default App;
