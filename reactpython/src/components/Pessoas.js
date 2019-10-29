@@ -45,6 +45,7 @@ export class Pessoas extends Component {
                             <td>{pessoa.idade}</td>
                             <td>{pessoa.cpf}</td>
                             <td><button className='btn btn-danger' onClick={this.delete.bind(this, pessoa.id)}>Excluir</button></td>
+                            <td><Link className='btn btn-warning' to={'/Edit/'+ pessoa.id}>Editar</Link></td>
                         </tr>
                     )}
                 </tbody>

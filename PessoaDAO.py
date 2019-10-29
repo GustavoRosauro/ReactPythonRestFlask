@@ -29,7 +29,13 @@ def buscarPessoa(id):
     sqlSelect = "SELECT NOME,IDADE,CPF FROM PESSOA WHERE ID =" + str(id)
     cursor.execute(sqlSelect)
     resultado = cursor.fetchall()
-    return {"pessoa": resultado}
+    for row in resultado:
+        pessoa = {
+            "nome": row[0],
+            "idade": row[1],
+            "cpf": row[2]
+        }
+    return {"pessoa": pessoa}
 def removerPessoa(id):
     cursor = db.cursor()
     sqlDelete = "DELETE FROM PESSOA WHERE ID = " + str(id)

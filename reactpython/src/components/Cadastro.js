@@ -44,7 +44,7 @@ export class Cadastro extends Component{
                 <label>Idade</label>
                 <input className="form-control" onChange={this.onChangeIdade} type="number"/>
                 <label>CPF</label> 
-                <input className="form-control" onChange={this.onChangeCPF} type="number" maxLength="11"/>
+                <input className="form-control"  onChange={this.onChangeCPF} type="number" maxLength="11"/>
                 <br/>
                 <button className="btn btn-success" onClick={this.Enviar}>Salvar</button>
             </div>

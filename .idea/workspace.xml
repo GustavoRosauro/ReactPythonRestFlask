@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="634ffd99-17a7-4fec-b822-5fdda59c6ae5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PessoaController.py" beforeDir="false" afterPath="$PROJECT_DIR$/PessoaController.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PessoaDAO.py" beforeDir="false" afterPath="$PROJECT_DIR$/PessoaDAO.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reactpython/src/components/Pessoas.js" beforeDir="false" afterPath="$PROJECT_DIR$/reactpython/src/components/Pessoas.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reactpython/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/reactpython/src/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +51,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

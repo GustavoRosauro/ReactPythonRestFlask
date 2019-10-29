@@ -6,12 +6,14 @@ import * as serviceWorker from './serviceWorker';
 import {Route,Switch, BrowserRouter as Router} from 'react-router-dom';
 import {Pessoas} from './components/Pessoas'
 import {Cadastro} from './components/Cadastro'
+import { Edit } from './components/Edit';
 const routing = (
   <Router>
   <Switch>
     <Route path='/' exact={true} component={App}/>
     <Route path='/Lista' exact={true} component={Pessoas}/>
     <Route path='/cadastro' exact={true} component={Cadastro}/>
+    <Route path='/Edit/:id' exact={true} component={Edit}/>
   </Switch>
   </Router>
      );
